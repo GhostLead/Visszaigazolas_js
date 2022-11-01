@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Visszaigazolás</title>
+</head>
+<body>
+    
+    <div>
+            <label for="megrendel_nev">Megrendelő neve:</label>
+            <input type="text" id="megrendel_nev" name="megrendel_nev" onfocus="nev_szinez_on()" onblur="nev_szinez_off()"> <br><br>
+            <label for="megrendel_cim">Megrendelő címe:</label>
+            <input type="text" id="megrendel_cim" name="megrendel_cim" onfocus="cim_szinez_on()" onblur="cim_szinez_off()"> <br><br>
+            <label for="megrendel_tel">Megrendelő telefonszáma:</label>
+            <input type="text" id="megrendel_tel" name="megrendel_tel" value="+36 " onfocus="tel_szinez_on()" onblur="tel_szinez_off()"> <br><br>
+
+            <button onclick="submit()">Elküld</button>
+
+    </div>
+
+    <div>
+        <p>Visszaigazolás!</p>
+        Név: <span id="nev">?</span> <br>
+        Cím: <span id="cim">?</span> <br>
+        Telefon: <span id="tel">?</span> <br>
+    </div>
+
+</body>
+</html>
